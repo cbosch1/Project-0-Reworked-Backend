@@ -1,15 +1,365 @@
-2020-10-30 10:33:34 INFO  root:42 - 
-2020-10-30 10:34:16 INFO  root:42 - This is a test of the logging system!
-2020-10-30 10:35:04 INFO  root:42 - This is a test of the logging system!
-2020-10-30 10:38:38 INFO  root:42 - This is a test of the logging system!
-2020-10-30 10:38:38 INFO  controllerLog:41 - This is a test of the logging system!
-2020-10-30 10:48:03 INFO  root:42 - This is a test of the logging system!
-2020-10-30 10:48:03 INFO  spellServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:03 INFO  casterServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:03 INFO  playerServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:03 INFO  controllerLog:41 - This is a test of the logging system!
-2020-10-30 10:48:51 INFO  consoleUILog:42 - This is a test of the logging system!
-2020-10-30 10:48:51 INFO  spellServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:51 INFO  casterServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:52 INFO  playerServiceLog:41 - This is a test of the logging system!
-2020-10-30 10:48:52 INFO  controllerLog:41 - This is a test of the logging system!
+2020-11-09 17:13:51 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:13:55 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:13:55 ERROR controllerLog:84 - Error in getAvailableSpellNames: java.lang.NullPointerException: Cannot invoke "SpellPointTracker.pojos.Player.getCasterType()" because "player" is null
+2020-11-09 17:14:05 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:14:05 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:14:05 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:14:05 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:14:07 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:14:07 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:14:07 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:14:07 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:14:07 INFO  controllerLog:104 - Returned 33 names
+2020-11-09 17:15:16 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:15:30 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:15:34 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:15:34 ERROR controllerLog:84 - Error in getAvailableSpellNames: java.lang.NullPointerException: Cannot invoke "SpellPointTracker.pojos.Player.getCasterType()" because "player" is null
+2020-11-09 17:15:42 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:15:42 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:15:42 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:15:42 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:15:45 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:15:45 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:15:45 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:15:45 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:15:45 INFO  controllerLog:104 - Returned 33 names
+2020-11-09 17:17:22 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:17:22 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:17:22 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:17:22 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:17:22 INFO  controllerLog:104 - Returned 33 names
+2020-11-09 17:17:37 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:17:43 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:17:43 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:17:43 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:17:43 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:17:44 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:17:44 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:17:45 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:17:45 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:17:45 INFO  controllerLog:104 - Returned 33 names
+2020-11-09 17:18:16 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:18:20 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:18:20 ERROR controllerLog:84 - Error in getAvailableSpellNames: java.lang.NullPointerException: Cannot invoke "SpellPointTracker.pojos.Player.getCasterType()" because "player" is null
+2020-11-09 17:18:24 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:18:24 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:18:24 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:18:24 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:18:27 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:18:27 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:18:27 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:18:27 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:18:27 INFO  controllerLog:105 - Returned 33 names
+2020-11-09 17:20:07 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:20:11 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:20:11 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:20:11 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:20:11 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:20:13 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:20:13 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:20:13 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:20:13 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:20:13 INFO  controllerLog:105 - Returned 33 names
+2020-11-09 17:22:15 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:22:20 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:22:20 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:22:20 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:22:20 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:22:23 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:22:23 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:22:24 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:22:24 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:22:24 INFO  controllerLog:99 - Returned 33 names
+2020-11-09 17:22:48 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:22:48 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:22:48 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 11
+2020-11-09 17:22:58 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:22:58 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:22:58 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:22:58 ERROR controllerLog:111 - Exception in castSpell: java.lang.NullPointerException: Cannot invoke "SpellPointTracker.pojos.Spell.getLevel()" because "spell" is null
+2020-11-09 17:22:58 INFO  controllerLog:116 - castSpell Crusader's Mantlereturned false
+2020-11-09 17:23:03 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:23:03 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:23:03 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:23:03 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:23:03 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:23:08 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:23:08 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:23:08 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 6
+2020-11-09 17:23:46 INFO  controllerLog:130 - Responding to rest request
+2020-11-09 17:23:46 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-09 17:23:46 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:23:46 INFO  controllerLog:134 - Resting
+2020-11-09 17:23:48 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:23:48 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:23:48 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 32
+2020-11-09 17:23:52 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:23:52 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:23:52 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:23:52 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:23:52 INFO  controllerLog:99 - Returned 33 names
+2020-11-09 17:24:06 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:06 INFO  serviceLog:43 - Retrieved spell Revivify  from local cache.
+2020-11-09 17:24:06 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:06 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:06 INFO  controllerLog:113 - Casted spell Revivify 
+2020-11-09 17:24:10 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:24:10 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:24:10 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 27
+2020-11-09 17:24:31 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:31 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:24:32 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:32 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:32 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:24:32 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:32 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:24:32 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:33 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:33 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:24:33 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:33 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:24:33 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:33 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:33 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:24:36 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:24:36 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:24:36 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 12
+2020-11-09 17:24:39 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:24:39 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:40 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:24:40 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:24:40 INFO  controllerLog:99 - Returned 33 names
+2020-11-09 17:24:43 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:43 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:24:43 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:43 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:43 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:24:46 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:24:46 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:46 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:24:46 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:24:46 INFO  controllerLog:99 - Returned 33 names
+2020-11-09 17:24:51 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:24:51 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:24:51 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 7
+2020-11-09 17:24:54 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:24:54 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:24:54 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:54 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:24:54 INFO  controllerLog:113 - Casted spell Crusader's Mantle 
+2020-11-09 17:24:57 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:24:57 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:24:57 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:24:57 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:24:57 INFO  controllerLog:99 - Returned 16 names
+2020-11-09 17:25:02 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:25:02 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:25:02 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 2
+2020-11-09 17:25:05 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:25:05 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:25:05 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-09 17:25:05 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-09 17:25:05 INFO  controllerLog:99 - Returned 16 names
+2020-11-09 17:25:09 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:25:09 INFO  serviceLog:43 - Retrieved spell Crusader's Mantle  from local cache.
+2020-11-09 17:25:09 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-09 17:25:09 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-09 17:25:09 INFO  controllerLog:116 - castSpell Crusader's Mantle returned false
+2020-11-09 17:30:18 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:30:21 INFO  controllerLog:24 - Responding to login request
+2020-11-09 17:30:21 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-09 17:30:21 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-09 17:30:21 INFO  controllerLog:37 - Michael Logged in
+2020-11-09 17:30:24 INFO  controllerLog:46 - Responding to create user request
+2020-11-09 17:30:24 INFO  serviceLog:69 - Caster Druid was retrieved from database for max points.
+2020-11-09 17:30:24 INFO  serviceLog:28 - Player Cbosch1 was entered into the database.
+2020-11-09 17:30:24 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-09 17:30:24 INFO  serviceLog:56 - Player Cbosch1 successfully retrieved.
+2020-11-09 17:30:24 INFO  controllerLog:80 - Cbosch1 created
+2020-11-09 17:30:33 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-09 17:30:33 INFO  serviceLog:89 - Caster Druid was retrieved from database for max spell level.
+2020-11-09 17:30:33 INFO  serviceLog:57 - Caster Druid was retrieved from database for their spells.
+2020-11-09 17:30:33 INFO  serviceLog:62 - Returned 123 specific spells.
+2020-11-09 17:30:33 INFO  controllerLog:99 - Returned 123 names
+2020-11-09 17:30:50 INFO  controllerLog:107 - Responding castSpell request
+2020-11-09 17:30:50 INFO  serviceLog:43 - Retrieved spell Control Flames  from local cache.
+2020-11-09 17:30:50 INFO  serviceLog:89 - Caster Druid was retrieved from database for max spell level.
+2020-11-09 17:30:50 INFO  serviceLog:98 - Player Cbosch1 was updated with new info.
+2020-11-09 17:30:50 INFO  controllerLog:113 - Casted spell Control Flames 
+2020-11-09 17:30:57 INFO  controllerLog:130 - Responding to rest request
+2020-11-09 17:30:57 INFO  serviceLog:69 - Caster Druid was retrieved from database for max points.
+2020-11-09 17:30:57 INFO  serviceLog:98 - Player Cbosch1 was updated with new info.
+2020-11-09 17:30:57 INFO  controllerLog:134 - Resting
+2020-11-09 17:31:13 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-09 17:31:13 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:31:13 INFO  controllerLog:147 - Current status: Player 3: Cbosch1 Level 20 Druid -- Available Spell Points: 123
+2020-11-09 17:31:23 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-09 17:32:30 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-09 17:32:30 INFO  serviceLog:70 - Player Michael successfully retrieved.
+2020-11-09 17:34:02 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-09 17:34:10 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-09 17:34:32 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-09 17:34:32 INFO  controllerLog:110 - Retrieved all spells successfully
+2020-11-11 09:20:16 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-11 09:21:06 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-11 09:21:14 INFO  controllerLog:24 - Responding to login request
+2020-11-11 09:21:14 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-11 09:21:14 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-11 09:21:14 INFO  controllerLog:37 - Michael Logged in
+2020-11-11 09:21:19 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:21:19 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:21:19 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 2
+2020-11-11 09:21:31 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 09:21:31 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 09:21:31 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 09:21:31 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 09:21:31 INFO  controllerLog:99 - Returned 16 names
+2020-11-11 09:21:53 INFO  controllerLog:107 - Responding castSpell request
+2020-11-11 09:21:53 INFO  serviceLog:43 - Retrieved spell Heroism  from local cache.
+2020-11-11 09:21:53 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 09:21:53 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 09:21:53 INFO  controllerLog:113 - Casted spell Heroism 
+2020-11-11 09:22:04 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:22:04 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:22:04 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 0
+2020-11-11 09:22:09 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 09:22:09 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 09:22:09 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 09:22:09 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 09:22:09 INFO  controllerLog:99 - Returned 0 names
+2020-11-11 09:22:13 INFO  controllerLog:130 - Responding to rest request
+2020-11-11 09:22:13 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-11 09:22:13 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 09:22:13 INFO  controllerLog:134 - Resting
+2020-11-11 09:22:18 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:22:18 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:22:18 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 32
+2020-11-11 09:22:39 INFO  serviceLog:82 - Retrieved 4 players from database.
+2020-11-11 09:22:39 INFO  serviceLog:70 - Player Michael successfully retrieved.
+2020-11-11 09:23:13 INFO  serviceLog:113 - Player null was deleted.
+2020-11-11 09:23:13 INFO  controllerLog:201 - Successfully deleted user number: 2
+2020-11-11 09:23:15 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 09:23:26 INFO  serviceLog:113 - Player null was deleted.
+2020-11-11 09:23:26 INFO  controllerLog:201 - Successfully deleted user number: 4
+2020-11-11 09:23:32 INFO  serviceLog:41 - Player Michael was entered into the database.
+2020-11-11 09:23:32 INFO  controllerLog:57 - Player Michael was successfully created.
+2020-11-11 09:23:35 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 09:23:35 INFO  serviceLog:70 - Player Michael successfully retrieved.
+2020-11-11 09:23:40 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:23:40 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:23:40 INFO  controllerLog:147 - Current status: Player 2: Michael Level 6 Paladin -- Available Spell Points: 32
+2020-11-11 09:23:46 INFO  controllerLog:24 - Responding to login request
+2020-11-11 09:23:46 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 09:23:46 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-11 09:23:46 INFO  controllerLog:37 - Michael Logged in
+2020-11-11 09:23:49 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:23:49 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:23:49 INFO  controllerLog:147 - Current status: Player 2: Michael Level 1 Paladin -- Available Spell Points: 0
+2020-11-11 09:23:53 INFO  controllerLog:130 - Responding to rest request
+2020-11-11 09:23:53 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-11 09:23:53 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 09:23:53 INFO  controllerLog:134 - Resting
+2020-11-11 09:23:55 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 09:23:55 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 09:23:55 INFO  controllerLog:147 - Current status: Player 2: Michael Level 1 Paladin -- Available Spell Points: 4
+2020-11-11 09:23:58 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 09:23:58 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 09:23:58 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 09:23:58 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 09:23:58 INFO  controllerLog:99 - Returned 16 names
+2020-11-11 10:35:06 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-11 10:35:10 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:35:20 INFO  serviceLog:113 - Player null was deleted.
+2020-11-11 10:35:20 INFO  controllerLog:201 - Successfully deleted user number: 2
+2020-11-11 10:35:23 INFO  serviceLog:82 - Retrieved 2 players from database.
+2020-11-11 10:43:11 INFO  serviceLog:30 - Retrieved 397 spells from database.
+2020-11-11 10:43:15 INFO  controllerLog:46 - Responding to create user request
+2020-11-11 10:43:15 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-11 10:43:16 INFO  serviceLog:28 - Player Michael was entered into the database.
+2020-11-11 10:43:16 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:43:16 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-11 10:43:16 INFO  controllerLog:80 - Michael created
+2020-11-11 10:43:35 INFO  controllerLog:24 - Responding to login request
+2020-11-11 10:43:35 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:43:35 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-11 10:43:35 INFO  controllerLog:37 - Michael Logged in
+2020-11-11 10:43:47 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:43:47 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:43:47 INFO  controllerLog:147 - Current status: Player 5: Michael Level 1 Paladin -- Available Spell Points: 4
+2020-11-11 10:44:10 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 10:44:10 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:44:10 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 10:44:10 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 10:44:10 INFO  controllerLog:99 - Returned 16 names
+2020-11-11 10:44:30 INFO  controllerLog:107 - Responding castSpell request
+2020-11-11 10:44:30 INFO  serviceLog:43 - Retrieved spell Bless  from local cache.
+2020-11-11 10:44:30 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:44:30 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:44:30 INFO  controllerLog:113 - Casted spell Bless 
+2020-11-11 10:44:37 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:44:37 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:44:37 INFO  controllerLog:147 - Current status: Player 5: Michael Level 1 Paladin -- Available Spell Points: 2
+2020-11-11 10:44:47 INFO  controllerLog:107 - Responding castSpell request
+2020-11-11 10:44:47 INFO  serviceLog:43 - Retrieved spell Bless  from local cache.
+2020-11-11 10:44:47 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:44:47 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:44:47 INFO  controllerLog:113 - Casted spell Bless 
+2020-11-11 10:44:49 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:44:50 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:44:50 INFO  controllerLog:147 - Current status: Player 5: Michael Level 1 Paladin -- Available Spell Points: 0
+2020-11-11 10:44:53 INFO  controllerLog:107 - Responding castSpell request
+2020-11-11 10:44:53 INFO  serviceLog:43 - Retrieved spell Bless  from local cache.
+2020-11-11 10:44:54 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:44:54 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:44:54 INFO  controllerLog:116 - castSpell Bless returned false
+2020-11-11 10:45:00 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 10:45:00 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:45:00 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 10:45:00 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 10:45:00 INFO  controllerLog:99 - Returned 0 names
+2020-11-11 10:45:10 INFO  controllerLog:130 - Responding to rest request
+2020-11-11 10:45:10 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-11 10:45:10 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:45:10 INFO  controllerLog:134 - Resting
+2020-11-11 10:45:14 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:45:14 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:45:14 INFO  controllerLog:147 - Current status: Player 5: Michael Level 1 Paladin -- Available Spell Points: 4
+2020-11-11 10:45:44 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:45:54 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:45:54 WARN  serviceLog:74 - Player with id: 2 not found.
+2020-11-11 10:45:54 INFO  controllerLog:36 - Player 2 was not found
+2020-11-11 10:45:58 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:45:58 INFO  serviceLog:70 - Player Michael successfully retrieved.
+2020-11-11 10:46:17 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:46:17 INFO  controllerLog:187 - Successfully updated user: Michael
+2020-11-11 10:46:23 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:46:23 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:46:23 INFO  controllerLog:147 - Current status: Player 5: Michael Level 1 Paladin -- Available Spell Points: 4
+2020-11-11 10:46:28 INFO  controllerLog:24 - Responding to login request
+2020-11-11 10:46:28 INFO  serviceLog:82 - Retrieved 3 players from database.
+2020-11-11 10:46:28 INFO  serviceLog:56 - Player Michael successfully retrieved.
+2020-11-11 10:46:28 INFO  controllerLog:37 - Michael Logged in
+2020-11-11 10:46:31 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:46:31 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:46:31 INFO  controllerLog:147 - Current status: Player 5: Michael Level 6 Paladin -- Available Spell Points: 0
+2020-11-11 10:46:38 INFO  controllerLog:130 - Responding to rest request
+2020-11-11 10:46:38 INFO  serviceLog:69 - Caster Paladin was retrieved from database for max points.
+2020-11-11 10:46:38 INFO  serviceLog:98 - Player Michael was updated with new info.
+2020-11-11 10:46:38 INFO  controllerLog:134 - Resting
+2020-11-11 10:46:40 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 10:46:41 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 10:46:41 INFO  controllerLog:147 - Current status: Player 5: Michael Level 6 Paladin -- Available Spell Points: 32
+2020-11-11 10:46:48 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 10:46:48 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 10:46:48 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 10:46:48 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 10:46:48 INFO  controllerLog:99 - Returned 33 names
+2020-11-11 10:47:30 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 11:34:52 INFO  controllerLog:143 - Reponding to getStatus request
+2020-11-11 11:34:52 INFO  serviceLog:31 - Retrieved all casters from database.
+2020-11-11 11:34:52 INFO  controllerLog:147 - Current status: Player 5: Michael Level 6 Paladin -- Available Spell Points: 32
+2020-11-11 11:35:04 INFO  controllerLog:90 - Responding to getSpells request
+2020-11-11 11:35:04 INFO  serviceLog:89 - Caster Paladin was retrieved from database for max spell level.
+2020-11-11 11:35:04 INFO  serviceLog:57 - Caster Paladin was retrieved from database for their spells.
+2020-11-11 11:35:04 INFO  serviceLog:62 - Returned 44 specific spells.
+2020-11-11 11:35:04 INFO  controllerLog:99 - Returned 33 names

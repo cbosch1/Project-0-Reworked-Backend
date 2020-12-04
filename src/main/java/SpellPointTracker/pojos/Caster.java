@@ -1,23 +1,27 @@
 package SpellPointTracker.pojos;
 
+import java.util.Arrays;
+
+/**
+ * An object representing the playable casting classes available in Dungeons and
+ * Dragons 5th edition
+ */
 public class Caster {
     private int id;
     private String name;
-    private int[] maxPoints; //Different max points based on level 
-    private int[] spellIds;
-    private int[] maxSpellLevels;
+    private boolean halfCaster;
+    private Integer[] spellIds;
 
     public Caster() {
         super();
     }
 
-    public Caster(int id, String name, int[] maxPoints, int[] spellIds, int[] maxSpellLevels) {
+    public Caster(int id, String name, boolean halfCaster, Integer[] spellIds) {
         this();
         this.id = id;
         this.name = name;
-        this.maxPoints = maxPoints;
+        this.halfCaster = halfCaster;
         this.spellIds = spellIds;
-        this.maxSpellLevels = maxSpellLevels;
     }
 
     public int getId() {
@@ -36,27 +40,60 @@ public class Caster {
         this.name = name;
     }
 
-    public int[] getMaxPoints() {
-        return maxPoints;
+    public boolean getHalfCaster() {
+        return halfCaster;
     }
 
-    public void setMaxPoints(int[] maxPoints) {
-        this.maxPoints = maxPoints;
+    public void setHalfCaster(boolean halfCaster) {
+        this.halfCaster = halfCaster;
     }
 
-    public int[] getSpellIds() {
+    public Integer[] getSpellIds() {
         return spellIds;
     }
 
-    public void setSpellIds(int[] spellIds) {
+    public void setSpellIds(Integer[] spellIds) {
         this.spellIds = spellIds;
     }
 
-    public int[] getMaxSpellLevels() {
-        return maxSpellLevels;
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + id;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + Arrays.hashCode(spellIds);
+        return result;
     }
 
-    public void setMaxSpellLevels(int[] maxSpellLevels) {
-        this.maxSpellLevels = maxSpellLevels;
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Caster other = (Caster) obj;
+        if (id != other.id)
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (halfCaster != other.halfCaster) {
+            return false;
+        }
+        if (!Arrays.equals(spellIds, other.spellIds))
+            return false;
+        return true;
     }
+
+    @Override
+    public String toString() {
+        return "Caster " + id + ": " + name + ", half=" + halfCaster + ", spellIds= "
+                + Arrays.toString(spellIds);
+    }
+
 }

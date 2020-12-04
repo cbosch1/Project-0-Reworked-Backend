@@ -1,7 +1,9 @@
 package SpellPointTracker.services;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -9,18 +11,22 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.runners.MockitoJUnitRunner;
-//import org.apache.log4j.Logger;
-
-import SpellPointTracker.services.PlayerServiceImpl;
+import org.mockito.junit.MockitoJUnitRunner;
+import SpellPointTracker.pojos.Player;
 
 @RunWith(MockitoJUnitRunner.class)
 public class PlayerServiceImplTest {
 
-    //private static Logger Log = Logger.getLogger("playerServiceLog");
+	private PlayerServiceImpl playerService;
+	private String username;
+	private String password;
+	private int level;
+	private int casterType;
+	private Player player;
+	private List<Player> players;
+	private List<Player> noPlayers;
 
-    @BeforeClass
+	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
 	}
 
@@ -30,6 +36,18 @@ public class PlayerServiceImplTest {
 
 	@Before
 	public void setUp() throws Exception {
+		username = "daveTheGamer";
+		password = "password1!";
+		level = 2;
+		casterType = 0;
+		player = new Player(0, username, password, 0, level, casterType);
+
+		players = new ArrayList<>();
+		players.add(player);
+		noPlayers = new ArrayList<>();
+
+		playerService = new PlayerServiceImpl();
+		playerService.setPlayers(noPlayers);
 	}
 
 	@After
@@ -37,8 +55,18 @@ public class PlayerServiceImplTest {
 	}
 
 	@Test
-	public void test() {
-        //Log.info("This is a test of the logging system!");
-		fail("Not yet implemented");
+	public void createPlayerTest() {
+		assertTrue("createPlayer returned False", playerService.createPlayer(username, password, 0, level, casterType));
+		assertTrue("Player object was not properly added to collection", playerService.getPlayers().get(0).getUsername().equals(player.getUsername()));
+	}
+
+	@Test
+	public void getPlayerTest() {
+		playerService.setPlayers(players);
+		assertTrue("Player was not retrieved", playerService.getPlayer(username, password).equals(player));
+
+		playerService.setPlayers(noPlayers);
+		Player empty = playerService.getPlayer(username, password);
+		assertTrue("Object returned not null", empty == null);
 	}
 }
