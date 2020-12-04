@@ -46,7 +46,7 @@ public class CasterServiceImpl implements CasterService {
     }
 
     /**
-     * Gets an array of ints representing the spellId's of the inputed caster
+     * Gets an array of ints representing the spellId's of the inputted caster
      * 
      * @return int[] spellIds
      */
