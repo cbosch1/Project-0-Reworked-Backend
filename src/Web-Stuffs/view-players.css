@@ -1,0 +1,104 @@
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: darkslategray;
+  color: cyan;
+}
+
+form {
+  text-align: center;
+}
+
+a {
+  color: deeppink;
+}
+
+a:hover {
+  color: violet;
+}
+
+.TitleArea h1 {
+  font-weight: bold;
+  border-style: outset;
+  border-radius: 15%;
+  border-width: thick;
+}
+
+.center {
+  text-align: center;
+}
+
+.header_subtext {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: silver;
+}
+
+/* Grid testing stuff */
+
+.TitleArea {
+  grid-area: header;
+  text-align: center;
+}
+.LeftBody {
+  grid-area: gleft;
+  text-align: left;
+}
+.CenterBody {
+  grid-area: gcenter;
+}
+.RightBody {
+  grid-area: gright;
+  text-align: right;
+}
+.Footer {
+  grid-area: footer;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "gleft gcenter gright"
+    "footer footer footer";
+  grid-gap: 5%;
+  background-color: darkslategray;
+  padding: 5%;
+}
+
+input[type="submit"] {
+  background-color: cyan;
+  color: darkslategray;
+  border: solid cyan;
+  border-radius: 5%;
+  padding: 8px 24px;
+  margin: 4px, 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkslategray;
+  color: cyan;
+  border: solid cyan;
+  border-radius: 5%;
+  padding: 8px 24px;
+  margin: 4px, 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  text-align: right;
+  -ms-flex-item-align: right;
+}
+
+.table-style {
+  border-style: solid;
+  border-collapse: collapse;
+  border-width: 5px;
+  margin: 5px;
+  text-align: center;
+}

@@ -1,21 +1,22 @@
 package SpellPointTracker.pojos;
 
+/**
+ * An object representing a spell from Dungeons and Dragons 5th edition
+ */
 public class Spell {
     private int id;
     private String name;
     private int level;
-    private int cost;
 
     public Spell(){
         super();
     }
     
-    public Spell(int id, String name, int level, int cost) {
+    public Spell(int id, String name, int level) {
         this();
         this.id = id;
         this.name = name;
         this.level = level;
-        this.cost = cost;
     }
 
     public int getId() {
@@ -42,11 +43,39 @@ public class Spell {
         this.level = level;
     }
 
-    public int getCost() {
-        return cost;
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + id;
+        result = prime * result + level;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        return result;
     }
 
-    public void setCost(int cost) {
-        this.cost = cost;
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Spell other = (Spell) obj;
+        if (id != other.id)
+            return false;
+        if (level != other.level)
+            return false;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Spell " + id + ": " + name + ", Level " + level;
     }
 }
