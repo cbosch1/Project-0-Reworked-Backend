@@ -70,10 +70,15 @@ public class CasterServiceImpl implements CasterService {
     @Override
     public int getMaxPoints(int casterId, int level) {
         switch (casterId) {
-            case 0, 1, 2, 4, 6:
+            case 0:
+            case 1:
+            case 2:
+            case 4:
+            case 6:
                 return levelToPoints[level];
 
-            case 3, 5:
+            case 3:
+            case 5:
                 return levelToPoints[level / 2];
 
             default:
@@ -93,10 +98,15 @@ public class CasterServiceImpl implements CasterService {
     @Override
     public int getMaxSpellLevel(int casterId, int level) {
         switch (casterId) {
-            case 0, 1, 2, 4, 6:
+            case 0:
+            case 1:
+            case 2:
+            case 4:
+            case 6:
                 return levelToSpell[level];
 
-            case 3, 5:
+            case 3:
+            case 5:
                 return levelToSpell[level / 2];
 
             default:
