@@ -120,6 +120,22 @@ CREATE TRIGGER caster_only_spell_check
 
 
 -- Useful select statements for certain verifications.
+SELECT * FROM caster;
+SELECT * FROM caster_spell;
+SELECT * FROM player;
+SELECT * FROM spell;
+
+INSERT INTO spell VALUES (0, 'Placeholder', 0);
+
+INSERT INTO caster VALUES (1, 'Bard', false);
+INSERT INTO caster VALUES (2, 'Cleric', false);
+INSERT INTO caster VALUES (3, 'Druid', false);
+INSERT INTO caster VALUES (4, 'Paladin', true);
+INSERT INTO caster VALUES (5, 'Ranger', true);
+INSERT INTO caster VALUES (6, 'Sorcerer', false);
+INSERT INTO caster VALUES (7, 'Warlock', true);
+INSERT INTO caster VALUES (8, 'Wizard', false);
+INSERT INTO caster VALUES (9, 'Artificer', false);
 
 SELECT c.caster_id, c.caster_name, c.half_caster, cs.spell_id FROM caster c 
 LEFT JOIN caster_spell cs 
