@@ -11,6 +11,16 @@ plugins {
     id 'java-library'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class' : 'SpellPointTracker.ServerDriver'
+    }
+    
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    } 
+}
+
 repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
