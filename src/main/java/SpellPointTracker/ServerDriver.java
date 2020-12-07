@@ -1,7 +1,5 @@
 package SpellPointTracker;
 
-import java.util.Scanner;
-
 import SpellPointTracker.controllers.*;
 import SpellPointTracker.services.*;
 import SpellPointTracker.util.ConnectionUtil;
@@ -19,14 +17,12 @@ public class ServerDriver {
     private static WebAdminController webAdmin = new WebAdminController(admin);
     
     private static Javalin app;
-    private static Scanner scan = new Scanner(System.in);;
     private static final String GAME_PATH = "/game-management/user";
     private static final String PLAYER_PATH = "/data-management/player";
     private static final String CASTER_PATH = "/data-management/caster";
     private static final String SPELL_PATH = "/data-management/spell";
     
     public static void main(String[] args) {
-        try {
             app = Javalin.create().start(8113);
             //Testing Jenkins Again
 
@@ -54,18 +50,5 @@ public class ServerDriver {
             app.put(SPELL_PATH + "/:id", ctx -> webAdmin.updateSpell(ctx));
             app.post(SPELL_PATH, ctx -> webAdmin.postSpell(ctx));
             app.delete(SPELL_PATH + "/:id", ctx -> webAdmin.deleteSpell(ctx));
-
-            String input = "";
-            do {
-                input = scan.nextLine();
-            } while (input != "End");
-        } catch (Exception e) {
-            scan.close();
-            app.stop();
-        }
-        finally {
-            scan.close();
-            app.stop();
-        }
     }
 }
